@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACS Absolute Comfort — HVAC in Houston, TX (demo preview)</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="ACS Absolute Comfort — HVAC in Houston, TX. Call (281) 495-2013. Demo preview only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1430; --navy2:#0e1d44; --blue:#2f6bff; --sky:#39c2ff;
+    --orange:#ff6a2c; --orange2:#ff8f3c; --ink:#0c1426; --slate:#5a6781;
+    --line:#e7ecf5; --bg:#f6f9ff; --white:#fff; --green:#16b364;
+    --shadow:0 20px 50px -20px rgba(12,30,70,.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden;max-width:100%}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+  img,svg{max-width:100%}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;border-radius:999px;padding:15px 26px;font-size:1rem;transition:.25s;cursor:pointer;border:none;white-space:nowrap}
+  .btn-call{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;box-shadow:0 12px 28px -8px rgba(255,106,44,.6)}
+  .btn-call:hover{transform:translateY(-2px);box-shadow:0 18px 36px -8px rgba(255,106,44,.7)}
+  .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.2)}
+  .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ===== Header ===== */
+  header{position:sticky;top:0;z-index:50;background:rgba(10,20,48,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .logo{display:flex;align-items:center;gap:11px;color:#fff;font-weight:800;font-size:1.18rem;letter-spacing:-.3px}
+  .logo .mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--sky));display:grid;place-items:center;font-size:1.2rem;box-shadow:0 6px 16px -4px rgba(47,107,255,.7)}
+  .nav .btn{padding:11px 20px;font-size:.95rem}
+
+  /* ===== Hero ===== */
+  .hero{position:relative;background-color:var(--navy);background-image:linear-gradient(180deg,rgba(10,20,48,.84),rgba(13,27,64,.9)),url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600&q=72');background-size:cover;background-position:center;color:#fff;overflow:hidden;padding:74px 0 90px}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+  .pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 14px;border-radius:999px;font-size:.82rem;font-weight:600}
+  .pill.live{background:rgba(22,179,100,.18);border-color:rgba(22,179,100,.4)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(22,179,100,.7);animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,179,100,.6)}70%{box-shadow:0 0 0 9px rgba(22,179,100,0)}100%{box-shadow:0 0 0 0 rgba(22,179,100,0)}}
+  .hero h1{font-size:3.15rem;line-height:1.05;font-weight:800;letter-spacing:-1.5px;margin-bottom:18px}
+  .hero h1 .grad{background:linear-gradient(135deg,var(--orange),var(--orange2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p.sub{font-size:1.14rem;color:#c3cfe6;max-width:520px;margin-bottom:28px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px}
+  .hero .btn{padding:17px 30px;font-size:1.06rem}
+  .trust{display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:#aeb9d3;font-size:.9rem;font-weight:500}
+  .stars{color:#ffc83d;letter-spacing:2px;font-size:1.05rem}
+  .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.18);border-radius:24px;padding:26px;backdrop-filter:blur(10px);box-shadow:var(--shadow)}
+  .hero-card h3{font-size:1.05rem;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+  .qline{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.96rem;color:#dbe4f5}
+  .qline:last-child{border:none}
+  .qline .ic{width:34px;height:34px;border-radius:9px;background:rgba(57,194,255,.18);display:grid;place-items:center;flex:none}
+  .hero-card .btn{width:100%;justify-content:center}
+  .qform{display:flex;flex-direction:column;gap:11px;margin-top:14px}
+  .qform input{width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-size:.96rem}
+  .qform input::placeholder{color:#aeb9d3}
+  .qform input:focus{outline:none;border-color:var(--sky);background:rgba(255,255,255,.14)}
+  .btn-quote{background:#0d1b40;color:#fff;border:1px solid rgba(255,255,255,.2);justify-content:center;width:100%;margin-top:2px}
+  .btn-quote:hover{background:#15264f;transform:translateY(-1px)}
+  .qmicro{text-align:center;color:#aeb9d3;font-size:.8rem;margin-top:11px}
+
+  /* ===== Stats ===== */
+  .stats{background:var(--white);margin-top:-40px;position:relative;z-index:5}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 24px;box-shadow:var(--shadow)}
+  .stat{text-align:center}
+  .stat .num{font-size:2.3rem;font-weight:800;letter-spacing:-1px;background:linear-gradient(135deg,var(--blue),var(--sky));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .stat .lbl{color:var(--slate);font-size:.86rem;font-weight:600;margin-top:2px}
+
+  /* ===== Sections ===== */
+  section.pad{padding:84px 0}
+  .eyebrow{color:var(--blue);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:.8rem;text-align:center}
+  h2.title{font-size:2.4rem;font-weight:800;letter-spacing:-1px;text-align:center;margin:10px 0 12px}
+  .lead{text-align:center;color:var(--slate);max-width:620px;margin:0 auto 50px;font-size:1.06rem}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;transition:.3s;position:relative;overflow:hidden}
+  .svc::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--blue),var(--sky));transform:scaleX(0);transform-origin:left;transition:.35s}
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .svc:hover::before{transform:scaleX(1)}
+  .svc .icon{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,rgba(47,107,255,.12),rgba(57,194,255,.12));display:grid;place-items:center;font-size:1.7rem;margin-bottom:18px}
+  .svc h3{font-size:1.2rem;margin-bottom:9px}
+  .svc p{color:var(--slate);font-size:.96rem}
+
+  .why{background:var(--bg)}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .why h2{font-size:2.3rem;font-weight:800;letter-spacing:-1px;margin-bottom:14px}
+  .why .sub{color:var(--slate);margin-bottom:26px;font-size:1.05rem}
+  .check{display:flex;gap:14px;margin-bottom:18px}
+  .check .ck{width:30px;height:30px;border-radius:50%;background:rgba(22,179,100,.13);color:var(--green);display:grid;place-items:center;font-weight:800;flex:none}
+  .check b{display:block;font-size:1.04rem}
+  .check span{color:var(--slate);font-size:.94rem}
+  .why-visual{background:linear-gradient(160deg,var(--navy),var(--navy2));border-radius:24px;padding:38px;color:#fff;box-shadow:var(--shadow)}
+  .why-visual .big{font-size:3.4rem;font-weight:800;letter-spacing:-1.5px;line-height:1}
+  .why-visual .grad{background:linear-gradient(135deg,var(--sky),#9fe3ff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .vrow{display:flex;align-items:center;gap:13px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12)}
+  .vrow .ic{width:46px;height:46px;border-radius:12px;background:rgba(57,194,255,.18);display:grid;place-items:center;font-size:1.4rem;flex:none}
+  .vrow b{font-size:1.02rem}.vrow span{color:#aeb9d3;font-size:.9rem}
+
+  .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 10px 30px -18px rgba(12,30,70,.3)}
+  .rev .stars{font-size:1.15rem;margin-bottom:14px}
+  .rev .review-text{font-size:1.08rem;color:#2b364d;margin-bottom:18px;font-weight:500}
+  .rev .who{display:flex;align-items:center;gap:13px}
+  .rev .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.1rem}
+  .rev .reviewer-name{font-weight:700}
+  .rev .g{color:var(--slate);font-size:.84rem;display:flex;align-items:center;gap:5px}
+
+  .area{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;text-align:center}
+  .area h2{color:#fff}
+  .chips{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;max-width:760px;margin:6px auto 0}
+  .chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:10px 18px;border-radius:999px;font-weight:600;font-size:.94rem;transition:.25s}
+  .chip:hover{background:rgba(57,194,255,.2);border-color:rgba(57,194,255,.5);transform:translateY(-2px)}
+  .chip.main{background:linear-gradient(135deg,var(--blue),var(--sky));border-color:transparent}
+
+  .final{position:relative;background:radial-gradient(800px 400px at 50% 0%,rgba(255,106,44,.18),transparent),linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;text-align:center;padding:80px 0;overflow:hidden}
+  .final h2{font-size:2.7rem;font-weight:800;letter-spacing:-1.2px;margin-bottom:14px}
+  .final p{color:#c3cfe6;font-size:1.15rem;margin-bottom:30px}
+  .final .btn{padding:20px 40px;font-size:1.2rem}
+  .final .micro{margin-top:18px;color:#9fb0d0;font-size:.9rem}
+
+  footer{background:#070f24;color:#8d9bbb;padding:46px 0 30px;font-size:.92rem}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:26px;margin-bottom:20px}
+  .foot-grid .logo{font-size:1.1rem;margin-bottom:10px}
+  footer b{color:#fff}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.84rem}
+
+  .callbar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:rgba(10,20,48,.95);backdrop-filter:blur(10px);padding:11px 16px;border-top:1px solid rgba(255,255,255,.1)}
+  .callbar .btn{width:100%;justify-content:center;font-size:1.1rem;padding:15px}
+
+  .float-call{position:fixed;right:22px;bottom:26px;z-index:55;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange2));display:grid;place-items:center;font-size:1.6rem;box-shadow:0 14px 30px -8px rgba(255,106,44,.7);animation:pulse2 2.4s infinite}
+  @keyframes pulse2{0%{box-shadow:0 0 0 0 rgba(255,106,44,.55),0 14px 30px -8px rgba(255,106,44,.7)}70%{box-shadow:0 0 0 16px rgba(255,106,44,0),0 14px 30px -8px rgba(255,106,44,.7)}100%{box-shadow:0 0 0 0 rgba(255,106,44,0),0 14px 30px -8px rgba(255,106,44,.7)}}
+
+  @media(max-width:880px){
+    .hero{padding:52px 0 64px}
+    .hero .wrap{grid-template-columns:1fr;gap:28px}
+    .hero h1{font-size:2.05rem;letter-spacing:-.4px}
+    .hero p.sub{font-size:1.05rem}
+    .hero .btn{padding:15px 24px;font-size:1rem}
+    .why-grid{grid-template-columns:1fr;gap:30px}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .stats .grid{grid-template-columns:1fr 1fr;gap:20px;padding:24px 18px}
+    h2.title,.why h2{font-size:1.85rem}
+    .final h2{font-size:1.95rem}
+    section.pad{padding:60px 0}
+    .nav .np{display:none}
+    .nav .btn{padding:11px 16px}
+    .logo{font-size:1.02rem}
+    .callbar{display:block}
+    .callbar .btn{white-space:nowrap;font-size:1.02rem}
+    body{padding-bottom:74px}
+    .float-call{display:none}
+  }
+  @media(max-width:520px){
+    .svc-grid{grid-template-columns:1fr}
+    .rev-grid{grid-template-columns:1fr}
+    .hero h1{font-size:1.85rem}
+    .hero .cta-row .btn{width:100%;justify-content:center}
+    .stat .num{font-size:2rem}
+  }
+
+  .demo-banner{background:#fff3e8;border-bottom:1px solid #ffd7bf;color:#7a3b12;font-size:.88rem;font-weight:600;text-align:center;padding:10px 16px;position:relative;z-index:60}
+  .label-demo{display:inline-block;background:rgba(255,106,44,.12);color:#c44a12;font-size:.72rem;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:5px 10px;border-radius:999px;margin-bottom:10px}
+  .reviews-empty{border:2px dashed var(--line);border-radius:18px;padding:36px 24px;background:#fff;text-align:center;max-width:640px;margin:0 auto}
+  .reviews-empty strong{display:block;margin-bottom:8px;font-size:1.05rem}
+  .rev .src{color:var(--slate);font-size:.78rem;margin-top:6px;font-weight:500}
+  .qform input:disabled,.qform textarea:disabled{opacity:.85;cursor:not-allowed}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header><div class="wrap nav">
+  <div class="logo"><span class="mark">❄️</span> ACS Absolute Comfort</div>
+  <a class="btn btn-call" href="tel:+12814952013">📞 <span class="np">(281) 495-2013</span></a>
+</div></header>
+<section class="hero"><div class="wrap"><div>
+  <div class="badge-row"><span class="pill">📍 Houston &amp; west side</span><span class="pill">HVAC</span><span class="pill">📱 Mobile-friendly demo</span></div>
+  <h1>Heating and cooling, home or business.<br><span class="grad">Houston HVAC repair &amp; installation.</span></h1>
+  <p class="sub">ACS Absolute Comfort: air conditioning and heating installation and repair, commercial HVAC, indoor air quality and A/C tune-ups across Houston.</p>
+  <div class="cta-row"><a class="btn btn-call" href="tel:+12814952013">📞 Call (281) 495-2013</a><a class="btn btn-ghost" href="#text-back">Missed a call? Text me back</a></div>
+  <div class="trust"><span>Demo preview for sales walkthrough</span></div>
+</div>
+<div class="hero-card" id="text-back">
+  <span class="label-demo">Non-functional demo · clearly labeled</span>
+  <h3>📱 Missed a call? Request a text-back</h3>
+  <p style="color:#c3cfe6;font-size:.88rem;margin:0 0 10px">Missed-call text-back demo. Fields are disabled; nothing is stored or sent.</p>
+  <a class="btn btn-call" href="tel:+12814952013">📞 Call (281) 495-2013</a>
+  <form class="qform" action="#" method="post" onsubmit="event.preventDefault();alert('Demo only — this form does not submit.');return false;">
+    <input type="text" name="name" placeholder="Your name" disabled>
+    <input type="tel" name="phone" placeholder="Mobile number" disabled>
+    <textarea name="note" rows="2" placeholder="What do you need? (optional)" disabled style="width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-size:.96rem"></textarea>
+    <button type="submit" class="btn btn-quote" disabled aria-disabled="true">Text me back (demo — disabled)</button>
+  </form>
+  <p class="qmicro">Or call now: <a href="tel:+12814952013" style="color:var(--sky);font-weight:700">(281) 495-2013</a></p>
+</div></div></section>
+<section class="pad"><div class="wrap">
+  <div class="eyebrow reveal">What We Do</div>
+  <h2 class="title reveal">Residential &amp; Commercial HVAC</h2>
+  <p class="lead reveal">Services as listed by ACS Absolute Comfort in public sources.</p>
+  <div class="svc-grid">
+      <div class="svc reveal"><div class="icon">❄️</div><h3>A/C installation &amp; repair</h3><p>Listed on their Services menu.</p></div>
+      <div class="svc reveal"><div class="icon">🔥</div><h3>Heating installation &amp; repair</h3><p>Furnace and heat pump work, per their site.</p></div>
+      <div class="svc reveal"><div class="icon">🏢</div><h3>Commercial HVAC</h3><p>Listed on their Services menu.</p></div>
+      <div class="svc reveal"><div class="icon">🌬️</div><h3>Indoor air quality</h3><p>Air purifiers, ventilators, humidifiers, duct cleaning.</p></div>
+      <div class="svc reveal"><div class="icon">🛠️</div><h3>A/C tune-up</h3><p>Seasonal tune-ups and inspections.</p></div>
+      <div class="svc reveal"><div class="icon">💳</div><h3>Financing</h3><p>Financing page listed on their site.</p></div>
+  </div>
+</div></section>
+<section class="pad why"><div class="wrap why-grid">
+  <div class="reveal">
+    <div class="eyebrow" style="text-align:left">About ACS Absolute Comfort</div>
+    <h2>Residential and commercial comfort.</h2>
+    <p class="sub">Details below come from the business's own public pages and listings.</p>
+      <div class="check"><span class="ck">✓</span><div><b>Residential &amp; commercial</b><span>Per their homepage</span></div></div>
+      <div class="check"><span class="ck">✓</span><div><b>Furnace &amp; heat pump work</b><span>Per their homepage</span></div></div>
+      <div class="check"><span class="ck">✓</span><div><b>Financing available</b><span>Per their homepage</span></div></div>
+      <div class="check"><span class="ck">✓</span><div><b>TX license TACLB23232C</b><span>Shown in their site header</span></div></div>
+  </div>
+  <div class="why-visual reveal">
+    <div class="big"><span class="grad">Home + Business</span></div>
+    <p style="color:#c3cfe6;margin-top:8px">Houston, Katy, Spring, Tomball, Missouri City &amp; nearby (their contact page)</p>
+    <div class="vrow"><span class="ic">📞</span><div><b>Click-to-call</b><span>Tap to call from any phone</span></div></div>
+    <div class="vrow"><span class="ic">📱</span><div><b>Missed-call text-back</b><span>Demo form on this page</span></div></div>
+  </div>
+</div></section>
+<section class="pad" id="reviews"><div class="wrap">
+<div class="eyebrow reveal">Reviews</div>
+<h2 class="title reveal">Customer feedback</h2>
+<div class="reviews-empty reveal"><strong>Reviews placeholder</strong><p style="color:var(--slate);font-size:.95rem;max-width:480px;margin:0 auto">No verified public review quotes were confirmed for this demo at build time. Real quotes, with a source link, can be added later. Nothing here is invented.</p></div>
+</div></section>
+<section class="final"><div class="wrap">
+  <h2>Need heating and cooling help?</h2>
+  <p>Call ACS Absolute Comfort, or use the demo missed-call text-back form above.</p>
+  <a class="btn btn-call" href="tel:+12814952013">📞 Call (281) 495-2013</a>
+  <div class="micro">Demo preview • Click-to-call enabled • Text-back form is non-functional</div>
+</div></section>
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div><div class="logo"><span class="mark">❄️</span> ACS Absolute Comfort</div><div>HVAC · Houston, TX<br>12102 5th St, Houston, TX 77072</div></div>
+    <div><b>Call us</b><br><a href="tel:+12814952013" style="color:var(--sky);font-weight:700;font-size:1.15rem">(281) 495-2013</a><br>Mon–Fri 7 am–5 pm · Sat 7 am–2 pm · Sun closed</div>
+    <div><b>Service area</b><br>Houston, Katy, Spring, Tomball, Missouri City &amp; nearby (their contact page)</div>
+  </div>
+  <div class="foot-bottom"><span>© 2026 Demo preview for ACS Absolute Comfort · not affiliated until approved</span></div>
+</div></footer>
+<div class="callbar"><a class="btn btn-call" href="tel:+12814952013">📞 Call Now — (281) 495-2013</a></div>
+<a class="float-call" href="tel:+12814952013" aria-label="Call now">📞</a>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

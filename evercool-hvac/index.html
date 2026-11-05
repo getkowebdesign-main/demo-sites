@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evercool Air Conditioning &amp; Heating — HVAC in Montgomery County, TX (demo preview)</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Evercool Air Conditioning &amp; Heating — HVAC in Montgomery County, TX. Call (832) 589-4255. Demo preview only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1430; --navy2:#0e1d44; --blue:#2f6bff; --sky:#39c2ff;
+    --orange:#ff6a2c; --orange2:#ff8f3c; --ink:#0c1426; --slate:#5a6781;
+    --line:#e7ecf5; --bg:#f6f9ff; --white:#fff; --green:#16b364;
+    --shadow:0 20px 50px -20px rgba(12,30,70,.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden;max-width:100%}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+  img,svg{max-width:100%}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;border-radius:999px;padding:15px 26px;font-size:1rem;transition:.25s;cursor:pointer;border:none;white-space:nowrap}
+  .btn-call{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;box-shadow:0 12px 28px -8px rgba(255,106,44,.6)}
+  .btn-call:hover{transform:translateY(-2px);box-shadow:0 18px 36px -8px rgba(255,106,44,.7)}
+  .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.2)}
+  .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  .demo-banner{background:#fff3e8;border-bottom:1px solid #ffd7bf;color:#7a3b12;font-size:.88rem;font-weight:600;text-align:center;padding:10px 16px;position:relative;z-index:60}
+  .label-demo{display:inline-block;background:rgba(255,106,44,.12);color:#c44a12;font-size:.72rem;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:5px 10px;border-radius:999px;margin-bottom:10px}
+  .slot{border:2px dashed rgba(255,255,255,.35);border-radius:14px;padding:12px 14px;background:rgba(255,255,255,.06);font-size:.84rem;color:#c3cfe6}
+  .slot.light{border-color:var(--line);background:#fff;color:var(--slate)}
+  .slot strong{display:block;color:inherit;margin-bottom:4px}
+  .slot.light strong{color:var(--ink)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(10,20,48,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
+  .logo{display:flex;align-items:center;gap:11px;color:#fff;font-weight:800;font-size:1.12rem;letter-spacing:-.3px;min-width:0}
+  .logo .mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--sky));display:grid;place-items:center;font-size:1.2rem;box-shadow:0 6px 16px -4px rgba(47,107,255,.7);flex:none}
+  .nav .btn{padding:12px 18px;font-size:.95rem}
+  .nav-phone{font-size:1.05rem;padding:13px 22px}
+
+  .hours-strip{background:linear-gradient(90deg,#0e1d44,#13285a);color:#d7e3ff;font-size:.9rem;font-weight:600;text-align:center;padding:9px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .hours-strip span{color:#9fe3ff}
+
+  .hero{position:relative;background-color:var(--navy);background-image:linear-gradient(180deg,rgba(10,20,48,.88),rgba(13,27,64,.92)),url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=60');background-size:cover;background-position:center;color:#fff;overflow:hidden;padding:56px 0 72px}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+  .badge-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 12px;border-radius:999px;font-size:.78rem;font-weight:600}
+  .pill.live{background:rgba(22,179,100,.18);border-color:rgba(22,179,100,.4)}
+  .hero h1{font-size:2.85rem;line-height:1.08;font-weight:800;letter-spacing:-1.2px;margin-bottom:14px}
+  .hero h1 .grad{background:linear-gradient(135deg,var(--orange),var(--orange2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p.sub{font-size:1.08rem;color:#c3cfe6;max-width:520px;margin-bottom:18px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+  .hero .btn{padding:17px 28px;font-size:1.08rem}
+  .btn-call-xl{font-size:1.15rem;padding:18px 32px;min-height:52px}
+  .trust-stack{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 16px}
+  .trust-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 12px;font-size:.82rem;font-weight:600}
+  .trust-chip .ic{font-size:1rem}
+  .hero-quote{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 16px;margin-top:8px;max-width:520px}
+  .hero-quote p{font-size:.95rem;color:#e8eefc;font-weight:500;margin-bottom:6px}
+  .hero-quote .who{font-size:.8rem;color:#aeb9d3}
+
+  .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:22px;backdrop-filter:blur(10px);box-shadow:var(--shadow)}
+  .hero-card h3{font-size:1.05rem;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+  .qform{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+  .qform input,.qform select,.qform textarea{width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-size:.96rem}
+  .qform input::placeholder,.qform textarea::placeholder{color:#aeb9d3}
+  .qform select option{color:#0c1426}
+  .btn-quote{background:#0d1b40;color:#fff;border:1px solid rgba(255,255,255,.2);justify-content:center;width:100%;margin-top:2px}
+  .qmicro{text-align:center;color:#aeb9d3;font-size:.8rem;margin-top:10px}
+  .qform input:disabled,.qform textarea:disabled,.qform select:disabled{opacity:.85;cursor:not-allowed}
+
+  .photo-note{margin-top:14px;font-size:.78rem;color:#aeb9d3}
+
+  section.pad{padding:72px 0}
+  .eyebrow{color:var(--blue);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:.8rem;text-align:center}
+  h2.title{font-size:2.2rem;font-weight:800;letter-spacing:-1px;text-align:center;margin:10px 0 12px}
+  .lead{text-align:center;color:var(--slate);max-width:620px;margin:0 auto 40px;font-size:1.02rem}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;transition:.3s}
+  .svc:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .svc .icon{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,rgba(47,107,255,.12),rgba(57,194,255,.12));display:grid;place-items:center;font-size:1.55rem;margin-bottom:14px}
+  .svc h3{font-size:1.12rem;margin-bottom:8px}
+  .svc p{color:var(--slate);font-size:.94rem}
+
+  .why{background:var(--bg)}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .why h2{font-size:2.1rem;font-weight:800;letter-spacing:-1px;margin-bottom:12px}
+  .why .sub{color:var(--slate);margin-bottom:22px;font-size:1.02rem}
+  .check{display:flex;gap:14px;margin-bottom:16px}
+  .check .ck{width:30px;height:30px;border-radius:50%;background:rgba(22,179,100,.13);color:var(--green);display:grid;place-items:center;font-weight:800;flex:none}
+  .check b{display:block;font-size:1.02rem}
+  .check span{color:var(--slate);font-size:.92rem}
+  .why-visual{background:linear-gradient(160deg,var(--navy),var(--navy2));border-radius:24px;padding:32px;color:#fff;box-shadow:var(--shadow)}
+  .why-visual .big{font-size:2.8rem;font-weight:800;letter-spacing:-1.2px;line-height:1}
+  .why-visual .grad{background:linear-gradient(135deg,var(--sky),#9fe3ff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .vrow{display:flex;align-items:center;gap:13px;margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12)}
+  .vrow .ic{width:44px;height:44px;border-radius:12px;background:rgba(57,194,255,.18);display:grid;place-items:center;font-size:1.3rem;flex:none}
+  .vrow b{font-size:1rem}.vrow span{color:#aeb9d3;font-size:.88rem}
+
+  .area{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff}
+  .area h2{color:#fff}
+  .area .lead{color:#b7c5e0}
+  .area-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:8px}
+  .map-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:18px;min-height:280px}
+  .map-svg{width:100%;height:240px;border-radius:14px;background:linear-gradient(160deg,#122246,#1a3568);display:grid;place-items:center;position:relative;overflow:hidden}
+  .map-svg svg{width:92%;height:92%}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:9px 14px;border-radius:999px;font-weight:600;font-size:.9rem}
+
+  .rev{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 10px 30px -18px rgba(12,30,70,.3)}
+  .rev .review-text{font-size:1.04rem;color:#2b364d;margin-bottom:14px;font-weight:500}
+  .rev .reviewer-name{font-weight:700}
+  .rev .src{color:var(--slate);font-size:.78rem;margin-top:4px}
+
+  .slots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+  .slot-card{border:2px dashed var(--line);border-radius:16px;padding:20px;background:#fff;text-align:left}
+  .slot-card h3{font-size:1rem;margin:6px 0 8px}
+  .slot-card p{color:var(--slate);font-size:.9rem}
+
+  .final{position:relative;background:radial-gradient(800px 400px at 50% 0%,rgba(255,106,44,.18),transparent),linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;text-align:center;padding:70px 0;overflow:hidden}
+  .final h2{font-size:2.35rem;font-weight:800;letter-spacing:-1px;margin-bottom:12px}
+  .final p{color:#c3cfe6;font-size:1.1rem;margin-bottom:26px}
+  .final .btn{padding:18px 36px;font-size:1.15rem}
+  .final .micro{margin-top:16px;color:#9fb0d0;font-size:.88rem}
+
+  footer{background:#070f24;color:#8d9bbb;padding:42px 0 28px;font-size:.9rem}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:22px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:22px;margin-bottom:16px}
+  .foot-grid .logo{font-size:1.05rem;margin-bottom:8px;color:#fff}
+  footer b{color:#fff}
+  .foot-bottom{font-size:.82rem}
+
+  .callbar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:rgba(10,20,48,.96);backdrop-filter:blur(10px);padding:10px 14px;border-top:1px solid rgba(255,255,255,.1)}
+  .callbar .btn{width:100%;justify-content:center;font-size:1.08rem;padding:16px;min-height:52px}
+
+  @media(max-width:880px){
+    .hero{padding:40px 0 56px}
+    .hero .wrap,.why-grid,.area-grid{grid-template-columns:1fr;gap:24px}
+    .hero h1{font-size:1.95rem;letter-spacing:-.4px}
+    .svc-grid,.slots-grid{grid-template-columns:1fr 1fr}
+    h2.title,.why h2,.final h2{font-size:1.75rem}
+    section.pad{padding:52px 0}
+    .nav .np-label{display:none}
+    .callbar{display:block}
+    body{padding-bottom:76px}
+  }
+  @media(max-width:520px){
+    .svc-grid,.slots-grid{grid-template-columns:1fr}
+    .hero h1{font-size:1.75rem}
+    .hero .cta-row .btn{width:100%;justify-content:center}
+    .nav-phone{padding:12px 14px;font-size:.92rem}
+  }
+
+  .reviews-empty{border:2px dashed var(--line);border-radius:18px;padding:36px 24px;background:#fff;text-align:center;max-width:640px;margin:0 auto}
+  .reviews-empty strong{display:block;margin-bottom:8px;font-size:1.05rem}
+  .qform select:disabled{opacity:.85;cursor:not-allowed}
+
+/* 2026-11-02 mobile hero overflow fix */.hero .wrap>*{min-width:0}@media(max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}@media(max-width:520px){.hero h1{font-size:2.1rem;letter-spacing:-.6px}.hero .btn{padding:15px 18px}}
+</style>
+</head>
+<body>
+<div class="demo-banner">Demo preview for Evercool Air Conditioning &amp; Heating — not the live business site · click-to-call works · forms do not submit</div>
+<header><div class="wrap nav">
+  <div class="logo"><span class="mark">❄️</span> Evercool Air Conditioning &amp; Heating</div>
+  <a class="btn btn-call nav-phone" href="tel:+18325894255">📞 <span class="np">(832) 589-4255</span></a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="badge-row">
+      
+      <span class="pill">📍 Air conditioning &amp; heating</span>
+      <span class="pill">HVAC</span>
+    </div>
+    <h1>Cool comfort, local service.<br><span class="grad">Locally owned HVAC team.</span></h1>
+    <p class="sub">EverCool Air Conditioning and Heating: locally owned HVAC maintenance, repair and installation serving The Woodlands, Montgomery County and surrounding areas.</p>
+    <div class="cta-row">
+      <a class="btn btn-call btn-call-xl" href="tel:+18325894255">📞 Call Now — (832) 589-4255</a>
+      <a class="btn btn-ghost" href="#quote">Get a quote (demo form)</a>
+    </div>
+
+    <div class="trust-stack">
+      <div class="trust-chip"><span class="ic">✓</span> Locally owned &amp; operated</div>
+      <div class="trust-chip"><span class="ic">✓</span> Free quotes</div>
+      <div class="trust-chip"><span class="ic">✓</span> TACLA75574E</div>
+    </div>
+
+
+    <div class="hero-quote">
+      <p>“EverCool has been an amazing find. They’ve helped us with multiple HVAC issues in our home and rental properties. They are responsive and professional, and I truly value their entire team as trusted advisors. I appreciate the balanced feedback - educating us on the various options to solving our HVAC issues and then leave it us to make the best decision. Six stars if I could!”</p>
+      <div class="who">— Dave</div>
+    </div>
+    <p class="photo-note">Hero photo is generic Unsplash stock (license TBD for production). Prefer the business’s own truck / tech photos once they grant use.</p>
+  </div>
+
+  <div class="hero-card" id="quote">
+    <span class="label-demo">Non-functional demo · clearly labeled</span>
+    <h3>📋 Request a callback / quote</h3>
+    <p style="color:#c3cfe6;font-size:.88rem;margin:0 0 8px">Short 3-field form. Disabled here — nothing is stored or sent. Phone is the primary CTA.</p>
+    <a class="btn btn-call" href="tel:+18325894255" style="width:100%;justify-content:center;margin-bottom:8px">📞 Prefer to call? (832) 589-4255</a>
+    <form class="qform" action="#" method="post" onsubmit="event.preventDefault();alert('Demo only — this form does not submit.');return false;">
+      <input type="text" name="name" placeholder="Your name" disabled>
+      <input type="tel" name="phone" placeholder="Phone number" disabled>
+      <select name="need" disabled aria-disabled="true">
+        <option>What do you need?</option>
+        <option>AC repair</option>
+        <option>Heating</option>
+        <option>Install / replace</option>
+        <option>Maintenance / other</option>
+      </select>
+      <button type="submit" class="btn btn-quote" disabled aria-disabled="true">Request callback (demo — disabled)</button>
+    </form>
+    <p class="qmicro">Or call now: <a href="tel:+18325894255" style="color:var(--sky);font-weight:700">(832) 589-4255</a></p>
+  </div>
+</div></section>
+
+<section class="pad"><div class="wrap">
+  <div class="eyebrow reveal">What We Do</div>
+  <h2 class="title reveal">Our HVAC Services</h2>
+  <p class="lead reveal">Services as listed by Evercool Air Conditioning &amp; Heating in public sources.</p>
+  <div class="svc-grid">
+      <div class="svc reveal"><div class="icon">🧰</div><h3>Regular Maintenance</h3><p>Routine HVAC maintenance.</p></div>
+      <div class="svc reveal"><div class="icon">🛠️</div><h3>Repair</h3><p>Air conditioning and heating repair.</p></div>
+      <div class="svc reveal"><div class="icon">🏠</div><h3>Installation</h3><p>Air conditioning and heating installation.</p></div>
+  </div>
+</div></section>
+
+<section class="pad why"><div class="wrap why-grid">
+  <div class="reveal">
+    <div class="eyebrow" style="text-align:left">About Evercool Air Conditioning &amp; Heating</div>
+    <h2>Committed to customer satisfaction.</h2>
+    <p class="sub">Details below come from the business's own public pages and listings.</p>
+      <div class="check"><span class="ck">✓</span><div><b>Locally owned &amp; operated</b><span>Per their homepage</span></div></div>
+      <div class="check"><span class="ck">✓</span><div><b>Free quotes</b><span>Per their homepage</span></div></div>
+      <div class="check"><span class="ck">✓</span><div><b>TACLA75574E</b><span>Shown on their homepage</span></div></div>
+  </div>
+  <div class="why-visual reveal">
+    <div class="big"><span class="grad">EVERCOOL</span></div>
+    <p style="color:#c3cfe6;margin-top:8px">The Woodlands, Montgomery County &amp; surrounding areas</p>
+    <div class="vrow"><span class="ic">📞</span><div><b>Bigger click-to-call</b><span>Header + hero + sticky mobile bar</span></div></div>
+    <div class="vrow"><span class="ic">📋</span><div><b>Short quote form</b><span>3 fields max · phone is primary</span></div></div>
+  </div>
+</div></section>
+
+<section class="pad area" id="service-area"><div class="wrap">
+  <div class="eyebrow" style="color:#9fe3ff">Service area</div>
+  <h2 class="title">Where Evercool Air Conditioning &amp; Heating works</h2>
+  <p class="lead">Cities named in public sources. Map below is a demo-pattern illustration — not a live coverage checker.</p>
+  <div class="area-grid">
+    <div class="map-card">
+      <div class="label-demo" style="background:rgba(255,255,255,.12);color:#ffd7bf">Demo pattern · not a live ZIP checker</div>
+      <div class="map-svg" aria-label="Illustrative service-area map">
+        <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img">
+          <rect width="400" height="240" rx="12" fill="#122246"/>
+          <circle cx="210" cy="130" r="70" fill="none" stroke="#39c2ff" stroke-width="2" stroke-dasharray="6 6" opacity=".7"/>
+          <circle cx="210" cy="130" r="38" fill="rgba(47,107,255,.25)" stroke="#2f6bff" stroke-width="2"/>
+          <circle cx="210" cy="130" r="6" fill="#ff6a2c"/>
+          <text x="210" y="118" text-anchor="middle" fill="#fff" font-size="12" font-family="system-ui" font-weight="700">Air conditioning &amp; heating</text>
+          <text x="120" y="70" fill="#aeb9d3" font-size="11" font-family="system-ui">The Woodlands</text>
+          <text x="280" y="78" fill="#aeb9d3" font-size="11" font-family="system-ui">Montgomery County</text>
+          <text x="95" y="160" fill="#aeb9d3" font-size="11" font-family="system-ui"></text>
+          <text x="270" y="175" fill="#aeb9d3" font-size="11" font-family="system-ui"></text>
+          <text x="230" y="210" fill="#aeb9d3" font-size="11" font-family="system-ui"></text>
+        </svg>
+      </div>
+      <p style="color:#aeb9d3;font-size:.8rem;margin-top:10px">Optional next step: ZIP checker that only lights up cities already verified for that lead.</p>
+    </div>
+    <div>
+      <div class="chips">
+        <span class="chip">The Woodlands</span><span class="chip">Montgomery County</span>
+      </div>
+      <div class="slot" style="margin-top:18px">
+        <strong>Photo slot</strong>
+        Add the business’s own truck / tech / job photos here once they grant permission. Until then keep labeled stock or illustration only.
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="pad" id="reviews"><div class="wrap">
+<div class="eyebrow reveal">Reviews</div>
+<h2 class="title reveal">What customers say</h2>
+<p class="lead reveal">Quoted from public sources for this business. No aggregate star rating shown.</p>
+<div class="svc-grid">
+<div class="svc rev reveal"><p class="review-text">“EverCool has been an amazing find. They’ve helped us with multiple HVAC issues in our home and rental properties. They are responsive and professional, and I truly value their entire team as trusted advisors. I appreciate the balanced feedback - educating us on the various options to solving our HVAC issues and then leave it us to make the best decision. Six stars if I could!”</p><div class="reviewer-name">— Dave</div></div>
+</div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Need HVAC help?</h2>
+  <p>Call Evercool Air Conditioning &amp; Heating, or use the demo quote form above.</p>
+  <a class="btn btn-call btn-call-xl" href="tel:+18325894255">📞 Call (832) 589-4255</a>
+  <div class="micro">Demo preview · click-to-call enabled · forms non-functional · noindex</div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div><div class="logo"><span class="mark">❄️</span> Evercool Air Conditioning &amp; Heating</div><div>HVAC · Montgomery County, TX</div></div>
+    <div><b>Call us</b><br><a href="tel:+18325894255" style="color:var(--sky);font-weight:700;font-size:1.15rem">(832) 589-4255</a><br>Call for current hours</div>
+    <div><b>Service area</b><br>The Woodlands, Montgomery County &amp; surrounding areas</div>
+  </div>
+  <div class="foot-bottom"><span>© 2026 Demo preview for Evercool Air Conditioning &amp; Heating · not affiliated until approved</span></div>
+</div></footer>
+
+<div class="callbar"><a class="btn btn-call" href="tel:+18325894255">📞 Call Now — (832) 589-4255</a></div>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}, 200);
+</script>
+</body>
+</html>

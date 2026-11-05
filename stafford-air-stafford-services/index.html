@@ -162,6 +162,7 @@
   .reviews-empty strong{display:block;margin-bottom:8px;font-size:1.05rem}
   .qform select:disabled{opacity:.85;cursor:not-allowed}
 
+/* 2026-11-02 mobile hero overflow fix */.hero .wrap>*{min-width:0}@media(max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}@media(max-width:520px){.hero h1{font-size:2.1rem;letter-spacing:-.6px}.hero .btn{padding:15px 18px}}
 </style>
 </head>
 <body>
@@ -192,13 +193,7 @@
       <div class="trust-chip"><span class="ic">✓</span> Parts warehouse nearby</div>
       <div class="trust-chip"><span class="ic">🕒</span> Mon–Fri 7am–6pm, Sat 8am–noon</div>
     </div>
-
-    <div class="slot" style="margin-bottom:12px">
-      <strong>Placeholder slots (only fill when verified for THIS business)</strong>
-      Google rating &amp; review count · Licensed / bonded / insured badge · After-hours or 24/7 banner · Financing partner mark
-    </div>
-
-    <div class="hero-quote">
+<div class="hero-quote">
       <p>“Fast service, they understood our budget, everyone was friendly from phone call to finish. We were pleased.”</p>
       <div class="who">— Cheryl L.</div>
     </div>
@@ -302,17 +297,6 @@
 <div class="svc rev reveal"><p class="review-text">“They came out quickly, educated me on my HVAC system, and were extremely courteous. My neighbors on Next Door highly recommend them also.”</p><div class="reviewer-name">— Richelle F.</div></div>
 <div class="svc rev reveal"><p class="review-text">“I will never have my A/C work done by anybody other than the Staffords.”</p><div class="reviewer-name">— Timothy S.</div></div>
 </div>
-</div></section>
-
-<section class="pad" style="background:var(--bg)"><div class="wrap">
-  <div class="eyebrow">Optional slots (never invent)</div>
-  <h2 class="title">Trust extras — labeled placeholders</h2>
-  <p class="lead">These convert on top trade sites, but we only turn them on when verified for that specific lead.</p>
-  <div class="slots-grid">
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your Google rating here</h3><p>e.g. “4.9 · 295 reviews” only with a checkable source. Aggregate ratings are not shown until verified.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your license # / insured mark</h3><p>Generic “licensed &amp; insured” stays off unless sourced. Specific numbers already in the trust stack stay as verified facts only.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Financing / after-hours</h3><p>Financing partner badge and after-hours / 24/7 emergency banner appear only when that business publicly offers them. No KO prices on demos.</p></div>
-  </div>
 </div></section>
 
 <section class="final"><div class="wrap">

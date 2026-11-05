@@ -162,6 +162,7 @@
   .reviews-empty strong{display:block;margin-bottom:8px;font-size:1.05rem}
   .qform select:disabled{opacity:.85;cursor:not-allowed}
 
+/* 2026-11-02 mobile hero overflow fix */.hero .wrap>*{min-width:0}@media(max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}@media(max-width:520px){.hero h1{font-size:2.1rem;letter-spacing:-.6px}.hero .btn{padding:15px 18px}}
 </style>
 </head>
 <body>
@@ -190,13 +191,7 @@
       <div class="trust-chip"><span class="ic">✓</span> Owners Mark &amp; Allyson Hoag</div>
       <div class="trust-chip"><span class="ic">✓</span> Maintenance plan: 10% off repairs</div>
     </div>
-
-    <div class="slot" style="margin-bottom:12px">
-      <strong>Placeholder slots (only fill when verified for THIS business)</strong>
-      Google rating &amp; review count · Licensed / bonded / insured badge · After-hours or 24/7 banner · Financing partner mark
-    </div>
-
-    <div class="hero-quote">
+<div class="hero-quote">
       <p>“Techs were here fast and were so efficient and kind. And I am cool again!”</p>
       <div class="who">— Birch &amp; Laura (testimonial on their site, Apr 2020)</div>
     </div>
@@ -300,17 +295,6 @@
 <div class="svc rev reveal"><p class="review-text">“They just installed 2 new units on a property we bought and were on time, communicated every stage, and completed the job on time and on budget.”</p><div class="reviewer-name">— Stephen L. (testimonial on their site, Aug 2019)</div></div>
 <div class="svc rev reveal"><p class="review-text">“Mark and his crews are top notch. Very reliable, knowledgeable, skilled and professional.”</p><div class="reviewer-name">— Jim B. (testimonial on their site, Jan 2019)</div></div>
 </div>
-</div></section>
-
-<section class="pad" style="background:var(--bg)"><div class="wrap">
-  <div class="eyebrow">Optional slots (never invent)</div>
-  <h2 class="title">Trust extras — labeled placeholders</h2>
-  <p class="lead">These convert on top trade sites, but we only turn them on when verified for that specific lead.</p>
-  <div class="slots-grid">
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your Google rating here</h3><p>e.g. “4.9 · 295 reviews” only with a checkable source. Aggregate ratings are not shown until verified.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your license # / insured mark</h3><p>Generic “licensed &amp; insured” stays off unless sourced. Specific numbers already in the trust stack stay as verified facts only.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Financing / after-hours</h3><p>Financing partner badge and after-hours / 24/7 emergency banner appear only when that business publicly offers them. No KO prices on demos.</p></div>
-  </div>
 </div></section>
 
 <section class="final"><div class="wrap">

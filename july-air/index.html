@@ -162,6 +162,7 @@
   .reviews-empty strong{display:block;margin-bottom:8px;font-size:1.05rem}
   .qform select:disabled{opacity:.85;cursor:not-allowed}
 
+/* 2026-11-02 mobile hero overflow fix */.hero .wrap>*{min-width:0}@media(max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}@media(max-width:520px){.hero h1{font-size:2.1rem;letter-spacing:-.6px}.hero .btn{padding:15px 18px}}
 </style>
 </head>
 <body>
@@ -190,14 +191,7 @@
       <div class="trust-chip"><span class="ic">✓</span> NATE-certified technicians on staff</div>
       <div class="trust-chip"><span class="ic">✓</span> ACCA member</div>
     </div>
-
-    <div class="slot" style="margin-bottom:12px">
-      <strong>Placeholder slots (only fill when verified for THIS business)</strong>
-      Google rating &amp; review count · Licensed / bonded / insured badge · After-hours or 24/7 banner · Financing partner mark
-    </div>
-
-    
-    <p class="photo-note">Hero photo is generic Unsplash stock (license TBD for production). Prefer the business’s own truck / tech photos once they grant use.</p>
+<p class="photo-note">Hero photo is generic Unsplash stock (license TBD for production). Prefer the business’s own truck / tech photos once they grant use.</p>
   </div>
 
   <div class="hero-card" id="quote">
@@ -285,23 +279,6 @@
         Add the business’s own truck / tech / job photos here once they grant permission. Until then keep labeled stock or illustration only.
       </div>
     </div>
-  </div>
-</div></section>
-
-<section class="pad" id="reviews"><div class="wrap">
-<div class="eyebrow reveal">Reviews</div>
-<h2 class="title reveal">Customer feedback</h2>
-<div class="reviews-empty reveal"><strong>Reviews placeholder</strong><p style="color:var(--slate);font-size:.95rem;max-width:480px;margin:0 auto">No verified public review quotes were confirmed for this demo at build time. Real quotes, with a source link, can be added later. Nothing here is invented.</p></div>
-</div></section>
-
-<section class="pad" style="background:var(--bg)"><div class="wrap">
-  <div class="eyebrow">Optional slots (never invent)</div>
-  <h2 class="title">Trust extras — labeled placeholders</h2>
-  <p class="lead">These convert on top trade sites, but we only turn them on when verified for that specific lead.</p>
-  <div class="slots-grid">
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your Google rating here</h3><p>e.g. “4.9 · 295 reviews” only with a checkable source. Aggregate ratings are not shown until verified.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your license # / insured mark</h3><p>Generic “licensed &amp; insured” stays off unless sourced. Specific numbers already in the trust stack stay as verified facts only.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Financing / after-hours</h3><p>Financing partner badge and after-hours / 24/7 emergency banner appear only when that business publicly offers them. No KO prices on demos.</p></div>
   </div>
 </div></section>
 

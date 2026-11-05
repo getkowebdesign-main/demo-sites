@@ -162,6 +162,7 @@
   .reviews-empty strong{display:block;margin-bottom:8px;font-size:1.05rem}
   .qform select:disabled{opacity:.85;cursor:not-allowed}
 
+/* 2026-11-02 mobile hero overflow fix */.hero .wrap>*{min-width:0}@media(max-width:880px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}@media(max-width:520px){.hero h1{font-size:2.1rem;letter-spacing:-.6px}.hero .btn{padding:15px 18px}}
 </style>
 </head>
 <body>
@@ -192,13 +193,7 @@
       <div class="trust-chip"><span class="ic">✓</span> Residential &amp; light commercial</div>
       <div class="trust-chip"><span class="ic">🕒</span> Mon–Fri 9 am–5 pm · Sat–Sun closed</div>
     </div>
-
-    <div class="slot" style="margin-bottom:12px">
-      <strong>Placeholder slots (only fill when verified for THIS business)</strong>
-      Google rating &amp; review count · Licensed / bonded / insured badge · After-hours or 24/7 banner · Financing partner mark
-    </div>
-
-    <div class="hero-quote">
+<div class="hero-quote">
       <p>“I have used Bay Cam twice. Gas water heater replacement 14 months ago and main water line leak repair today. Couldn&#x27;t ask for a more professional and reasonably priced plumber. Terry really cares about his customers He is now my go to guy.”</p>
       <div class="who">— Google review, Jan 12, 2026 (via Exa Places)</div>
     </div>
@@ -301,17 +296,6 @@
 <div class="svc rev reveal"><p class="review-text">“I have used Bay Cam twice. Gas water heater replacement 14 months ago and main water line leak repair today. Couldn&#x27;t ask for a more professional and reasonably priced plumber. Terry really cares about his customers He is now my go to guy.”</p><div class="reviewer-name">— Google review, Jan 12, 2026 (via Exa Places)</div></div>
 <div class="svc rev reveal"><p class="review-text">“Terry and his entire crew are awesome. I have used BayCam on several occasions, but the most recent one is by far the best. The BayCam team did an awesome job, provided great work, and the service was incredible as always.”</p><div class="reviewer-name">— Google review, Nov 17, 2025 (via Exa Places)</div></div>
 </div>
-</div></section>
-
-<section class="pad" style="background:var(--bg)"><div class="wrap">
-  <div class="eyebrow">Optional slots (never invent)</div>
-  <h2 class="title">Trust extras — labeled placeholders</h2>
-  <p class="lead">These convert on top trade sites, but we only turn them on when verified for that specific lead.</p>
-  <div class="slots-grid">
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your Google rating here</h3><p>e.g. “4.9 · 295 reviews” only with a checkable source. Aggregate ratings are not shown until verified.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Your license # / insured mark</h3><p>Generic “licensed &amp; insured” stays off unless sourced. Specific numbers already in the trust stack stay as verified facts only.</p></div>
-    <div class="slot-card"><span class="label-demo">Placeholder</span><h3>Financing / after-hours</h3><p>Financing partner badge and after-hours / 24/7 emergency banner appear only when that business publicly offers them. No KO prices on demos.</p></div>
-  </div>
 </div></section>
 
 <section class="final"><div class="wrap">
